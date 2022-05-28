@@ -38,18 +38,18 @@
 
 ### Request
 
-    `GET /post/all`
+    GET /post/all
 
 ### Response
 
-    `Success (Status Code 200): `
+    Success (Status Code 200): 
 
             {
               status : "Success",
               blogs : blogs      
             }
 
-    `Failure (Status Code 401): `
+    Failure (Status Code 401): 
 
             {
                 status : "error",
@@ -61,18 +61,18 @@
 
 ### Request
 
-        `GET /post/search?author=author_name&title=title`
+        GET /post/search?author=author_name&title=title
 
 ### Response
 
-    `Success (Status Code 200)`
+    Success (Status Code 200)
 
         {
               status : "Successfully Fetched",
               blog : response    
         }
 
-      `Failure (Status Code 401)`
+      Failure (Status Code 401)
 
         {
                 status : "Failed",
@@ -83,17 +83,17 @@
 
 ### Request
 
-        `PATCH /post/publish/:id`
+        PATCH /post/publish/:id
 
 ### Response
 
-        `Success (Status Code 200)`
+        Success (Status Code 200)
 
             {
                   status: "Successfully Published"
             }
 
-          `Failure (Status Code 401)`
+        Failure (Status Code 401)
 
           {
                 status: "Error"
@@ -104,18 +104,18 @@
 
   ### Request
   
-          `GET /post/:id`
+          GET /post/:id
 
   ### Response
 
-          `Success (Status Code 200)`
+          Success (Status Code 200)
  
          {
               status : "Success",
               post : data
          }
 
-          `Failure (Status Code 401)`
+         Failure (Status Code 401)
           
           {
                status : "Failed"
@@ -125,17 +125,17 @@
 
 ### Request
 
-        `POST /post/updatelikes/:id`
+        POST /post/updatelikes/:id
 
 ### Response
 
-        `Success (Status Code 200)`
+        Success (Status Code 200)
 
         {
               status : 'Success'
         }
 
-        `Failure (Status Code 401)`
+        Failure (Status Code 401)
 
         {
              status : "Error"
