@@ -2,7 +2,8 @@
 
 ## To run the api's:
 
-### A backend API to Create Blog, View, Like a Blog, To search blogs and much more!
+`A backend API to Create Blog, View, Like a Blog, To search blogs and much more!`
+
 
 ## 1. To Create Blog Post 
 
