@@ -17,22 +17,16 @@
 `
 ### Response:
 
-`success:
-{
+
+`success:{
     "status": "success",
     "data": {
-        "title": "The life and land",
-        "description": "art",
-        "label": [
-            "art",
-            "life"
-        ],
-        "likes": 0,
-        "author": "level",
-        "published": "false",
-        "_id": "62925ad3c116125afa00499c",
-        "__v": 0
-    }
+            "title" : "blog title",
+            "description" : "blog description",
+            "label" : "blog label"
+            }
 }`
+
+
 `error: { status: "failed", error }`
 
