@@ -18,15 +18,18 @@
 ### Response:
 
 
-`success:{
+success:{
     "status": "success",
     "data": {
             "title" : "blog title",
             "description" : "blog description",
             "label" : "blog label"
             }
-}`
+}
 
 
-`error: { status: "failed", error }`
+error: { 
+       status: "failed",
+       error 
+    }
 
