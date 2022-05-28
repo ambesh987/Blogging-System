@@ -1,5 +1,6 @@
 const BlogModel = require("../Models/BlogModel");
 
+//controller to upload post
 const uploadData = async (req, res) => {
   try {
     const data = await BlogModel.create(req.body);
@@ -8,11 +9,13 @@ const uploadData = async (req, res) => {
       status: "success",
       data,
     });
-  } catch (error) {
+  } 
+  catch (error) {
     res.status(500).json({ status: "failed", error });
   }
 };
 
+//contoller to update likes
 const updateLikes = async (req, res) => {
   try {
     const id = req.params.id;
@@ -24,13 +27,15 @@ const updateLikes = async (req, res) => {
       message: "like updated",
       payload,
     });
-  } catch (error) {
+  } 
+  catch (error) {
     res.status(500).json({
       status: "failed to update likes",
     });
   }
 };
 
+//contoller to get all post using pagination
 const allPost = async (req, res) => {
   try {
     const page = +req.query.page || 1;
@@ -48,13 +53,15 @@ const allPost = async (req, res) => {
       totalCount,
       data,
     });
-  } catch (error) {
+  } 
+  catch (error) {
     res.status(500).json({
       status: "failed to fetch all posts",
     });
   }
 };
 
+//controller to search post usign title and author
 const searchPost = async (req, res) => {
   try {
     const author = req.query.author;
@@ -69,13 +76,15 @@ const searchPost = async (req, res) => {
       status: "success",
       finalData,
     });
-  } catch (error) {
+  } 
+  catch (error) {
     res.status(500).json({
       status: "failed to search from DB",
     });
   }
 };
 
+//controller to search blog using id
 const blog = async (req, res) => {
   try {
     const id = req.params.id;
@@ -90,6 +99,9 @@ const blog = async (req, res) => {
     });
   }
 };
+
+
+
 module.exports = {
   uploadData,
   updateLikes,

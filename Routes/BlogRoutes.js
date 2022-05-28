@@ -7,6 +7,7 @@ const {
   searchPost,
   blog,
 } = require("../Controller/BlogController");
+
 app.post("/upload", uploadData);
 app.post("/updatelikes/:id", updateLikes);
 app.get("/all", allPost);
