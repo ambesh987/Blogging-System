@@ -12,10 +12,10 @@
     POST  /post/addblog
 
         {
-            "title":"The life and land",
-            "description":"art",
-            "label":["art","life"],
-            "author":"level" 
+            "title":"blog title",
+            "description":"blog description",
+            "label":["blog_label"],
+            "author":"blog_author" 
         }
 
 ### Response:
