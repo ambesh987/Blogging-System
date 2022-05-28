@@ -3,6 +3,11 @@ const mongoose = require("mongoose");
 const app = express();
 const blogRoutes = require("./Routes/BlogRoutes");
 
+require('dotenv').config()
+const db= process.env.Db;
+
+
+
 //Middleware
 app.use(express.json());
 app.use("/post", blogRoutes);
