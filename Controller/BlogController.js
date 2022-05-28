@@ -11,7 +11,7 @@ const uploadData = async (req, res) => {
     });
   } 
   catch (error) {
-    res.status(500).json({ status: "failed", error });
+    res.status(401).json({ status: "failed", error });
   }
 };
 
@@ -29,7 +29,7 @@ const updateLikes = async (req, res) => {
     });
   } 
   catch (error) {
-    res.status(500).json({
+    res.status(401).json({
       status: "failed to update likes",
     });
   }
@@ -57,7 +57,7 @@ const allPost = async (req, res) => {
     });
   } 
   catch (error) {
-    res.status(500).json({
+    res.status(401).json({
       status: "failed to fetch all posts",
     });
   }
@@ -75,7 +75,7 @@ const searchPost = async (req, res) => {
     });
   } 
   catch (error) {
-    res.status(500).json({
+    res.status(401).json({
       status: "failed to search from DB",
     });
   }
@@ -92,7 +92,7 @@ const blog = async (req, res) => {
       data,
     });
   } catch (error) {
-    res.status(500).json({
+    res.status(401).json({
       status: "failed to get blog",
     });
   }
