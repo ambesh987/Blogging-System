@@ -8,7 +8,7 @@ app.use(express.json());
 app.use("/post", blogRoutes);
 
 //Connecting to the database (Mongo Atlas)
-const db = `mongodb+srv://ambeshom:1234@cluster0.cwiip.mongodb.net/blog`;
+
 mongoose.connect(db, () => {
   console.log("database is connected");
 });
