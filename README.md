@@ -6,7 +6,7 @@
 
 ### Request:
 
-    `POST  /post/addblog`
+    POST  /post/addblog
 
         {
             "title":"The life and land",
