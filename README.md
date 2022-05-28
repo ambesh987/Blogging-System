@@ -8,28 +8,28 @@
 
 `POST  /post/addblog`
 
-{
-    "title":"The life and land",
-    "description":"art",
-    "label":["art","life"],
-    "author":"level" 
-}
+			{
+				"title":"The life and land",
+				"description":"art",
+				"label":["art","life"],
+				"author":"level" 
+			}
 
 ### Response:
 
 
-success:{
-    "status": "success",
-    "data": {
-            "title" : "blog title",
-            "description" : "blog description",
-            "label" : "blog label"
-            }
-}
+			success:{
+				"status": "success",
+				"data": {
+						"title" : "blog title",
+						"description" : "blog description",
+						"label" : "blog label"
+						}
+			}
 
 
-error: { 
-       status: "failed",
-       error 
-    }
+			error: { 
+				   status: "failed",
+				   error 
+				}
 
