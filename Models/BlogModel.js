@@ -7,7 +7,9 @@ const BlogSchema = new mongoose.Schema({
   label: [{ type: String }],
   likes: { type: Number, default: 0 },
   author: { required: true, type: String },
-  
+  published:{type:String, default:false},
+  timestamp:{type:Date}
+
 });
 
 module.exports = mongoose.model("blog", BlogSchema);

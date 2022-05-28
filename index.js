@@ -9,6 +9,7 @@ const db= process.env.Db;
 
 
 //Middleware
+
 app.use(express.json());
 app.use("/post", blogRoutes);
 

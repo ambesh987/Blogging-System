@@ -4,7 +4,7 @@ const BlogModel = require("../Models/BlogModel");
 const uploadData = async (req, res) => {
   try {
     const data = await BlogModel.create(req.body);
-    console.log(data);
+    // console.log(data);
     res.status(200).json({
       status: "success",
       data,
@@ -48,9 +48,11 @@ const allPost = async (req, res) => {
       .limit(limit);
 
     const totalCount = await BlogModel.count();
+    const currentCount=data.length;
     res.status(200).json({
       status: "success",
       totalCount,
+      currentCount,
       data,
     });
   } 
@@ -66,12 +68,7 @@ const searchPost = async (req, res) => {
   try {
     const author = req.query.author;
     const title = req.query.title;
-
-    //    const data =  author && await BlogModel.find({author});
-    const finalData =
-      author == undefined
-        ? await BlogModel.find({ title })
-        : await BlogModel.find({ author });
+    const finalData = await BlogModel.find({$and:[{title},{author}] });
     res.status(200).json({
       status: "success",
       finalData,
@@ -85,6 +82,7 @@ const searchPost = async (req, res) => {
 };
 
 //controller to search blog using id
+
 const blog = async (req, res) => {
   try {
     const id = req.params.id;
@@ -100,6 +98,23 @@ const blog = async (req, res) => {
   }
 };
 
+const publish =async(req,res)=>{
+    try {
+        const id =req.params.id;
+        console.log(id);
+        await BlogModel.findByIdAndUpdate(id,{published:true});
+        res.status(200).json({
+            status: "Successfully Published"
+        })
+    } 
+    catch (error) {
+    res.status(401).json({
+            status: "Error occured during Publishing",
+            message : error
+    })
+}
+}
+
 
 
 module.exports = {
@@ -108,4 +123,5 @@ module.exports = {
   allPost,
   searchPost,
   blog,
+  publish
 };
