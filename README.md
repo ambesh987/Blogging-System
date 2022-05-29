@@ -1,8 +1,8 @@
 # Blogging System API
 
-## To run the api's:
-
 `A backend API to Create Blog, View, Like a Blog, To search blogs and much more!`
+
+## To run the api's:
 
 `Backend-API: https://blogging23.herokuapp.com/ `
 
