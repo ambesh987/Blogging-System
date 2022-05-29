@@ -2,9 +2,26 @@
 
 `A backend API to Create Blog, View, Like a Blog, To search blogs and much more!`
 
-## To run the api's:
+`PROBLEM STATEMENT: ` `Assignment 3`
 
-`Backend-API: https://blogging23.herokuapp.com/ `
+`Develop NodeJS backend APIs to support a blogging system`
+
+`Description:`
+
+`The APIs should support following operations:
+- Adding new Blogs to the backend system – blog would have properties like title,
+description, labels, author, etc.
+- Ability to list all blogs by popularity (maximum number of likes appears on top
+of list)
+- Ability to search blogs based on author and title
+- Ability to publish blog after it is saved
+- Ability to view a blog
+- Ability to like a blog`
+
+
+## To run the API:
+
+`Backend-API: [https://blogging23.herokuapp.com/](https://blogging23.herokuapp.com/) `
 
 
 ## 1. To Create Blog Post 
