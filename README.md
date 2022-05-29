@@ -26,7 +26,8 @@
             "data": {
                     "title" : "blog title",
                     "description" : "blog description",
-                    "label" : "blog label"
+                    "label":["blog_label"],
+                    "author":"blog_author"
                     }
                }
 
