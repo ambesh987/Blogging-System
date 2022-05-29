@@ -16,6 +16,7 @@ const uploadData = async (req, res) => {
 };
 
 //contoller to update likes
+
 const updateLikes = async (req, res) => {
   try {
     const id = req.params.id;
