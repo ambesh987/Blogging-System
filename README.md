@@ -1,6 +1,6 @@
 # Blogging System API
 
-`A backend API to Create Blog, View, Like a Blog, To search blogs and much more!`
+`A Backend API to Create Blog, View, Like a Blog, To search blogs and much more!`
 
 `PROBLEM STATEMENT: ` `Assignment 3`
 
